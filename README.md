@@ -49,7 +49,7 @@ Note that, whenever you close the flash message, there's a delay of 2s before it
 As you can see, you can use custom classes to define a number of additional CSS rules.
 
 ## How to customize jq-flash ? ##
-You might have noticed that `$.flash(message, ?type)` needs a message but also authorizes you to pass along a type that is actually used to construct a class name : with `x` as your type, the generated class nmae is `flash-x`.
+You might have noticed that `$.flash(message, ?type)` needs a message but also authorizes you to pass along a type that is actually used to construct a class name : with `x` as your type, the generated class name is `flash-x`.
 
 You can then use a custom rule to modify the colors of the flash message (there are already two examples, `flash-success` and `flash-failure`):
 ```css
