@@ -1,0 +1,20 @@
+{
+  "name": "jq-flash",
+  "version": "1.0.0",
+  "description": "A lightweight jQuery plugin for stylish flash messages",
+  "main": "dist/flash.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery",
+    "javascript",
+    "flash",
+    "message"
+  ],
+  "author": "Voltra",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~3.2.1"
+  }
+}
