@@ -21,8 +21,8 @@
 }
 
 .flash{
-    /*top: 0;
-    left: 0;*/
+    top: 0;
+    left: 0;
     width: var(--flash-width);
     height: var(--flash-height);
     position: relative;
@@ -96,9 +96,12 @@
 .flash {
     --flash-bg: var(--default);
     --flash-textColor: var(--default-textColor);
+    --flash-boxShadow: var(--customMaterialShadowInsetNorth);
+    --flash-textShadow: 0 0 0 transparent;
 	background-color: var(--flash-bg);
     color: var(--flash-textColor);
-    box-shadow: var(--customMaterialShadowInsetNorth);
+    box-shadow: var(--flash-boxShadow);
+    text-shadow: var(--flash-textShadow);
 }
 
 .flash > p{

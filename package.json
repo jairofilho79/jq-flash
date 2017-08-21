@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Voltra/jq-flash.git"
+  },
   "keywords": [
     "jquery",
     "javascript",
@@ -14,6 +18,10 @@
   ],
   "author": "Voltra",
   "license": "MIT",
+  "bugs": {
+      "url": "https://github.com/Voltra/jq-flash/issues"
+  },
+  "homepage": "https://github.com/Voltra/jq-flash#readme",
   "dependencies": {
     "jquery": "~3.2.1"
   }
