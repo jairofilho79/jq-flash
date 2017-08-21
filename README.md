@@ -4,17 +4,17 @@ What do I mean by "flash messages" ? These are, typically, the kind of messages 
 
 ## How to install jq-flash ? ##
 1. Grab the library :
-  -  `npm install --save jq-flash`
-  - download zip from [github](https://github.com/Voltra/jq-flash)
+	-  `npm install --save jq-flash`
+	- download zip from [github](https://github.com/Voltra/jq-flash)
 2. Set up the stylesheets in the following order :
-  1.  reset stylesheet (it is recommended to use the given reset.css)
-  2.  `dist/flash.css`
+	1.  reset stylesheet (it is recommended to use the given reset.css)
+	2.  `dist/flash.css`
 3. Load the JS dependencies in the following order :
-  1. jQuery
+	1. jQuery
 4. Load the jQuery plugin
-  - node : `require("path/to/jq-flash")(/*jQuery*/);`
-  - load via AMD/UMD
-  - script tag
+	- node : `require("path/to/jq-flash")(/*jQuery*/);`
+	- load via AMD/UMD
+	- script tag
   
 ## How to use jq-flash ? ##
 `jq-flash` is quite straight forward, you can either use it dynamically or statically (or even both :O).
