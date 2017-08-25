@@ -15,6 +15,9 @@ What do I mean by "flash messages" ? These are, typically, the kind of messages 
 	- node : `require("path/to/jq-flash")(/*jQuery*/);`
 	- load via AMD/UMD
 	- script tag
+        
+        **WARNING**
+        The actual library is in {installation path}/dist/
   
 ## How to use jq-flash ? ##
 `jq-flash` is quite straight forward, you can either use it dynamically or statically (or even both :O).
