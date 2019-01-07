@@ -26,7 +26,7 @@
     });
     
     
-    $.flash = function(message, type=""){
+    $.flash = function(message, type="",time){
         message = message?""+message:"";//to string
         message.replace(/</g, "&lt;").replace(/>/g, "&gt;");//Protect again XSS
 
@@ -51,6 +51,18 @@
             div.appendChild(button);
 
             document.querySelector("body").prepend(div);
+
+            if(time !== undefined) {
+                if(typeof time === "number") {
+                    setTimeout(() => {
+                        $(div).addClass("flash-folded");
+                        setTimeout(
+                            $.fn.remove.bind($(div)),
+                            2000//wait 2s before removing node
+                        );
+                    },time);
+                }
+            }
 
             //ret = Array.prototype.slice.apply(document.querySelector("body > .flash")).filter(e=>e == div);
         }else
