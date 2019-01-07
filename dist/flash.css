@@ -125,3 +125,18 @@
     background-color: transparent;
     color: inherit;
 }
+
+.flash-jq-danger {
+    color: white;
+    background-color: #E81E0C;
+}
+
+.flash-jq-success {
+    color: white;
+    background-color: #007D12;
+}
+
+.flash-jq-warning {
+    color: white;
+    background-color: #FFA60D;
+}
