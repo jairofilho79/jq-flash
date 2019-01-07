@@ -4,12 +4,12 @@
     --flash-height: 10vh;
     --flash-padding: 1vh;
     
-    --flash-close-scaleFactor: 0.69;
+    --flash-close-scaleFactor: 0.5;
     --flash-close-width: calc(var(--flash-close-scaleFactor) * var(--flash-height));
     --flash-close-height: var(--flash-close-width);
     --flash-close-marginLeft: calc((var(--flash-height) - var(--flash-close-width)) / 2);
     --flash-close-marginTop: calc((var(--flash-height) - var(--flash-close-height)) / 2);
-    --flash-close-fontSize: 4vh;
+    --flash-close-fontSize: 3vh;
     
     --flash-height-transition-duration: 0.5s;
     --flash-height-transition: height var(--flash-height-transition-duration) ease-in-out;
@@ -25,10 +25,11 @@
     left: 0;
     width: var(--flash-width);
     height: var(--flash-height);
-    position: relative;
-    
+    position: fixed;
+
     overflow: hidden;
-    display: block;
+    display: flex;
+    align-items: center;
     
     font-family: robotoMedium, roboto;
     
@@ -53,9 +54,8 @@
     cursor: pointer;
     
     padding: 0;
-    
-    margin-left: var(--flash-close-marginLeft);
-    margin-top: var(--flash-close-marginTop);
+
+    margin-right: 3%;
     
     font-size: var(--flash-close-fontSize);
 }
@@ -64,6 +64,8 @@
     width: calc(var(--flash-width) - var(--flash-close-width) - (2 * var(--flash-close-marginLeft)));
     height: auto;
     max-height: calc(var(--flash-height) - var(--flash-padding));
+    margin-left: 5%;
+    font-size: 120%;
     
     word-wrap: break-word;
     overflow-x: hidden;
